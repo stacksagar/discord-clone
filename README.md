@@ -13,7 +13,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <h3 align="center"><a href="stacksagar.github.io/disney-plus-ui">Disney Plus UI Design with (React.js & Tailwindcss)</a></h3>
+  <h3 align="center"><a href="stacksagar.github.io/discord-clone">Discord UI - with (React.js & Tailwindcss)</a></h3>
 
 
 <!-- HOW TO RUN -->
@@ -26,11 +26,11 @@ Please follow the below instructions to run this project in your machine:
 
 1. Clone this repository
    ```sh
-   git clone https://github.com/stacksagar/disney-plus-ui.git
+   git clone https://github.com/stacksagar/discord-clone.git
    ```
 2. Go into cloned directory
    ```sh
-   cd disney-plus-ui
+   cd discord-clone
    ```
 3. Install dev dependencies
    ```sh
