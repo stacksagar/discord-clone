@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+* {
+  margin: 0px;
+  transition: all 0.3s;
+  font-family: Ubuntu !important ;
+  color: #ffffff;
+  transition: all 0.4s;
+}
+
+/* Default Scroll Hide  */
+div {
+  scrollbar-color: transparent transparent !important;
+  scrollbar-width: thin !important;
+}
+div:hover {
+  scrollbar-color: #11111199 transparent !important;
+  scrollbar-width: thin !important;
+}
+
+div::-webkit-scrollbar {
+  width: 8px !important;
+}
+
+div::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+div::-webkit-scrollbar-thumb {
+  background: transparent !important;
+  border-radius: 10px;
+}
+div:hover::-webkit-scrollbar-thumb {
+  background: #11111199 !important; 
+}
+
+/* Default Scroll Hide  */
+
+.w-sm-screen {
+  width: 300px;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-header {
+  padding: 10px 0px;
+  border-bottom: 1.3px solid #180c0c5d;
+}
+
+.left-logos {
+  background: #202225;
+  width: 80px;
+}
+
+.left-logos > div {
+  margin-top: 10px;
+  width: 44px;
+  height: 44px;
+  background: #36393f;
+  color: #999 !important;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.left-logos > div > svg {
+  width: 22px;
+  height: 22px;
+}
+
+.left-logos > div > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.left-logos > div:hover > img {
+  border-radius: 30%;
+}
+
+.left-logos > div:hover {
+  background: #555;
+  border-radius: 30%;
+}
+
+.left-logos > div:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -15px;
+  margin: auto;
+  width: 9px;
+  height: 8px;
+  background: transparent;
+  border-radius: 10px;
+  transition: all 0.8s;
+}
+.left-logos > div:nth-child(3):after,
+.left-logos > div:nth-child(5):after {
+  background: #ddd;
+}
+.left-logos > div:nth-child(3):before,
+.left-logos > div:nth-child(5):before {
+  content: '3';
+  width: 17px;
+  height: 17px;
+  background: rgb(235, 50, 50);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  font-size: 9px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 0.3px 4px #222;
+}
+.left-logos > div:nth-child(5):before {
+  content: '47';
+}
+
+.left-logos > div:hover:after {
+  background: #ddd;
+  height: 25px;
+}
+
+.left-logos > div.active:after {
+  background: #ddd;
+  height: 25px;
+}
+
+.left-logos > div:last-child {
+  margin-top: 15px;
+}
+.left-logos > div:last-child:before {
+  margin-top: 15px;
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #555;
+}
+
+.left-sidebar {
+  height: calc(100vh - 50px);
+  overflow-y: auto;
+  background: #2f3136;
+}
+
+.right-sidebar {
+  background: #2f3136;
+}
+
+.messages-section {
+  height: calc(100vh - 50px);
+}
+
+.messages-main {
+  height: 100vh;
+  overflow-y: auto;
+  background: #36393f;
+}
+.messages-input {
+  background: #36393f;
+  height: 60px;
+  position: relative;
+}
+
+.messages-input > div {
+  background: #292b30;
+  height: 50px;
+  width: 90%;
+  margin: auto;
+  border-radius: 20px;
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  right: 0px;
+}
+.font-500 {
+  font-weight: 500;
+}
+.user-add {
+  position: relative;
+  padding: 3px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.user-add:hover {
+  background: #444444;
+}
+.user-add.user-active {
+  background: #444444;
+}
+.user-add:after {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  display: block;
+  content: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 20 20' fill='white'><path d='M8 9a3 3 0 100-6 3 3 0 000 6zM8 11a6 6 0 016 6H2a6 6 0 016-6zM16 7a1 1 0 10-2 0v1h-1a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V7z' /></svg>");
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.user-add:hover:after {
+  opacity: 1;
+}
+.user-add.user-active:after {
+  opacity: 1;
+}
+.user-add-hash {
+  position: relative;
+  padding: 5px 0px;
+  padding-left: 30px !important;
+  margin-bottom: 5px;
+}
+.user-add-hash:before {
+  position: absolute;
+  content: '#';
+  width: 20px;
+  height: 20px;
+  color: #999;
+  left: 9px;
+  top: 0px;
+  font-size: 20px;
+  bottom: 0px;
+  margin: auto;
+}
+
+.category-toggle {
+  position: relative;
+  font-size: 12px;  
+  font-weight:500;
+}
+
+.category-toggle:after {
+  position: absolute;
+  left: -16px;
+  top: 2px;
+  margin: auto;
+  display: block;
+  content: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 20 20" fill="cyan"> <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" /> </svg>');
+  transition: all 0.2s;
+}
+
+.category-toggle.active:after {
+  transform: rotate(90deg);
+}
