@@ -31,7 +31,7 @@ div::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 div:hover::-webkit-scrollbar-thumb {
-  background: #11111199 !important; 
+  background: #11111199 !important;
 }
 
 /* Default Scroll Hide  */
@@ -46,8 +46,28 @@ div:hover::-webkit-scrollbar-thumb {
 }
 
 .d-header {
-  padding: 10px 0px;
+  height: 40px !important;
   border-bottom: 1.3px solid #180c0c5d;
+}
+.d-footer {
+  height: 55px !important;
+}
+
+.general-heading {
+  max-width: 300px !important;
+}
+
+.search-field {
+  width: 180px !important;
+}
+.search-field:focus {
+  width: 200px !important;
+}
+
+@media (min-width: 1500px) {
+  .general-heading {
+    min-width: 500px !important;
+  }
 }
 
 .left-logos {
@@ -162,14 +182,41 @@ div:hover::-webkit-scrollbar-thumb {
 }
 
 .messages-section {
-  height: calc(100vh - 50px);
+  height: calc(100vh - 40px);
 }
 
 .messages-main {
   height: 100vh;
   overflow-y: auto;
-  background: #36393f;
+  background: #36393f !important;
+  padding: 10px !important;
+  padding-top: 15px !important;
+  padding-right: 50px !important;
 }
+
+.user-picture {
+  width: 60px !important;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.user-picture > img {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+  background: #555;
+}
+.user-info {
+  width: calc(100% - 70px) !important;
+  height: auto;
+}
+
+.user-info > p:last-child {
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+
 .messages-input {
   background: #36393f;
   height: 60px;
@@ -177,15 +224,20 @@ div:hover::-webkit-scrollbar-thumb {
 }
 
 .messages-input > div {
-  background: #292b30;
-  height: 50px;
-  width: 90%;
+  background: #40444b;
+  height: 45px;
+  width: 94%;
+  padding: 0px 20px;
   margin: auto;
-  border-radius: 20px;
+  border-radius: 10px;
   position: absolute;
   top: -20px;
   left: 0px;
   right: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 5px 0px #66666655;
 }
 .font-500 {
   font-weight: 500;
@@ -239,8 +291,8 @@ div:hover::-webkit-scrollbar-thumb {
 
 .category-toggle {
   position: relative;
-  font-size: 12px;  
-  font-weight:500;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .category-toggle:after {
@@ -255,4 +307,21 @@ div:hover::-webkit-scrollbar-thumb {
 
 .category-toggle.active:after {
   transform: rotate(90deg);
+}
+
+.online {
+  position: relative;
+  display: block;
+}
+.online::before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: gold;
+  right: 0px;
+  bottom: 0px;
+  z-index: 99;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px 2px #fff;
 }
