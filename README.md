@@ -10,7 +10,7 @@
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/**in**/stacksagar
 
-<a><img src="https://i.ibb.co/WH90ry5/Discord-clone-by-stacksagar.png /></a>
+<a href="https://stacksagar.github.io/discord-clone"><img src="https://i.ibb.co/WH90ry5/Discord-clone-by-stacksagar.png" /></a>
 
 <!-- PROJECT LOGO -->
 <br />
