@@ -10,10 +10,15 @@
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/**in**/stacksagar
 
+<iframe
+  src="https://stacksagar.github.io/discord-clone"
+  style="width:100%; height:300px;"
+></iframe>
+
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <h3 align="center"><a href="stacksagar.github.io/discord-clone">Discord UI - with (React.js & Tailwindcss)</a></h3>
+  <h3 align="center"><a href="https://stacksagar.github.io/discord-clone">Discord UI - with (React.js & Tailwindcss)</a></h3>
 
 
 <!-- HOW TO RUN -->
