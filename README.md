@@ -13,7 +13,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <h3 align="center"><a href="https://stacksagar.github.io/discord-clone">Discord UI - with (React.js & Tailwindcss)</a></h3>
+  <h3 align="center"><a href="https://stacksagar.github.io/discord-clone">Discord UI - with (React.js & TailwindCSS)</a></h3>
 
 <a href="https://stacksagar.github.io/discord-clone"><img src="https://i.ibb.co/WH90ry5/Discord-clone-by-stacksagar.png" /></a>
 
